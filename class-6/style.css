@@ -70,7 +70,7 @@ p.radio-btn label {
 }
 
 p.radio-btn input:focus {
-    color: green;
+    outline-color: green;
 }
 
 input[type="submit"] {
