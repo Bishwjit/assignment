@@ -69,6 +69,10 @@ p.radio-btn label {
     margin-right: 30px;
 }
 
+p.radio-btn input:focus {
+    color: green;
+}
+
 input[type="submit"] {
     width: auto;
     border: none;
