@@ -82,6 +82,7 @@ input[type="submit"] {
     margin-bottom: 0;
     float: right;
     outline: none;
+    color: #fff;
 }
 
 .main {
