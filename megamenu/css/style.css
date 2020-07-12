@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-area {
+    background-color: #20bf6b;
+    box-shadow: 0px 5px 5px -2px #aaa;
+}
+
+.menu {
+    text-align: center;
+    position: relative;
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.menu ul li a svg {
+    margin-right: 5px;
+}
+
+.menu ul li span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.menu ul li:hover > a {
+    background-color: #27ae60;
+}
+
+
+/*Megamenu CSS*/
+.menu li.megamenu {
+    position: static;
+}
+
+.menu li.megamenu .menu-wrapper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 120%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    border-bottom: 3px solid #20BF6B;
+    border-right: 3px solid #20BF6B;
+    border-left: 3px solid #20BF6B;
+    border-radius: 0 0 4px 4px;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../Menu-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu ul li.megamenu .menu-wrapper ul {
+    border-right: 1px solid #20BF6B;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.menu ul li.megamenu .menu-wrapper ul:nth-child(4n) {
+    border-right: none;
+}
+
+.menu ul li.megamenu .menu-wrapper ul li {
+    display: block;
+}
+
+.menu ul li.megamenu .menu-wrapper ul li a {
+    padding: 12px 12px;
+    font-size: 14px;
+    color: #373737;
+}
+
+.menu ul li.megamenu .menu-wrapper ul li:hover > a {
+    color: #20BF6B;
+    background: none;
+}
+
+.menu ul li.megamenu:hover > .menu-wrapper {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
