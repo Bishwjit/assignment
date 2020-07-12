@@ -2,9 +2,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #dfe4ea;
     margin: 0;
     padding: 0;
+    background: #f5f5f5;
 }
 
 .menu {
@@ -45,15 +45,16 @@ body {
 
 .menu ul li ul.submenu {
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 150px;
     left: 0;
     top: 110%;
     text-align: left;
-    box-shadow: 0px 5px 5px -2px #aaa;
     visibility: hidden;
     opacity: 0;
     transition: .3s;
+    box-shadow: 0px 3px 5px -2px #ddd;
+    border-bottom: 2px solid green;
 }
 
 .menu  ul li ul.submenu li {
@@ -62,6 +63,14 @@ body {
 
 .menu ul li ul.submenu li a {
     padding: 8px 15px;
+    color: #373737;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu ul li ul.submenu li:hover > a {
+    color: green;
+    background: #fff;
 }
 
 .menu ul li:hover > ul.submenu {
