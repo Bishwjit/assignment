@@ -569,6 +569,7 @@ select:focus {
 		width: 100%;
 		overflow: hidden;
 		transition: max-height 0.5s;
+		z-index: 999;
 	}
 
 	nav ul li {
