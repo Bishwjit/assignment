@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*
+font-family: 'Noto Serif', serif;
+font-family: 'Philosopher', sans-serif;
+*/
+
+.hover-area {
+    height: 100vh;
+}
+
+.single-hover {
+    text-align: center; 
+    border: 1px solid #ddd;
+    height: 320px;
+    transition: .3s;
+}
+.hoverThumb {
+    background-image: url(images/girl.jpg);
+}
+.hoverThumb {
+    height: 250px;
+    background-size: cover;
+    padding: 10px;
+}
+
+.social {
+    background: rgba(234, 32, 39, 0.6);
+    height: 100%;
+    text-align: right;
+    padding: 10px;
+    border: 5px solid rgba(255,255,255,0.6);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.social ul {list-style: none;margin: 0;padding: 0;width: 40px;float: right;margin: 20px 0;}
+
+.social ul li a {
+    color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0;
+    line-height: 30px;
+    text-align: center;
+    transition: .3s;
+}
+
+.social ul li:hover > a {
+    background-color: #fff;
+    color: #333;
+}
+
+.single-hover h3 {
+    font-size: 22px;
+}
+
+.single-hover h3 span {
+    color: #999;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 20px;
+}
+
+.d-hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.single-hover:hover .social {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.single-hover:hover .d-hide{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.single-hover:hover {
+    height: 420px;
+}
