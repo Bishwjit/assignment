@@ -1,0 +1,188 @@
+/* =====Responsiv Design ===== */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .footer-bottom-link a {
+        display: inline-block;
+        border-right: 1px solid;
+        font-size: 14px;
+    }
+
+    .copyright-text p {
+        font-size: 14px;
+    }
+
+    .social-link a {
+        display: inline-block;
+    }
+}
+
+
+/*------- Wide Mobile Layout --------*/
+
+@media only screen and (max-width: 767px) {
+
+    /*--------- Responsive Layout for  Wide Mobile Layout ------------*/
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /*Header section*/
+
+    section.header {
+        padding: 5px 0;
+    }
+
+    section.header .col-lg-2 {
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+
+    section.header .col-lg-8 {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    section.header nav.menu {
+        display: none;
+    }
+
+    .hero-area .hero-slider-inner {
+        margin-top: 30px;
+    }
+
+    /*Service Section*/
+
+    .single-service {
+        text-align: center;
+    }
+
+    /*Image of security*/
+
+    .security-img {
+        margin-bottom: 15px;
+    }
+
+    .col-lg-5.img-order-1 {
+        order: -1;
+    }
+
+    .single-slider h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .single-slider p {
+        font-size: 14px;
+    }
+
+    a.scom-btn {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .cta-area .cta-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .cta-area .col-lg-4.text-right {
+        text-align: center;
+    }
+
+    .footer-area .single-widget {
+        margin-bottom: 30px;
+    }
+
+    .footer-area .col-lg-3:last-child .single-widget {
+        margin-bottom: 0;
+    }
+
+    .copyright-text {
+        text-align: center;
+    }
+
+    .footer-bottom-link {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .social-link {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /*Brand Ima*/
+    .single-brand-img {
+        padding: 0 100px;
+    }
+
+    .order-2 {
+        order: -2;
+    }
+
+    .order-1 {
+        order: -1;
+    }
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .col-lg-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .brand-section .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    /*Security Sectijon*/
+
+    .security-img {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*About Us area*/
+
+    .security-content {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*Brand Section*/
+
+    .single-brand-img {
+        padding: 0 20px;
+    }
+
+    /*CTA Area*/
+    .cta-area .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
